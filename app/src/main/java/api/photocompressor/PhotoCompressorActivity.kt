@@ -16,10 +16,7 @@ import java.io.File
 
 class PhotoCompressorActivity: AppCompatActivity() {
 
-    // create compressor object
-    // you can pass null as config or use your own config like below
-    // val config = Config.Builder().setHeight(height).setWidth(width).setQuality(quality).build()
-
+    // init compressor object
     private lateinit var compressor: Compressor
 
     companion object {
@@ -32,6 +29,10 @@ class PhotoCompressorActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.example_activity)
+
+        // init compressor object
+        // you can pass null as config or use your own config like below
+        // val config = Config.Builder().setHeight(height).setWidth(width).setQuality(quality).build()
         compressor = Compressor(application, null)
 
         checkPermissionAndPickPhoto()
