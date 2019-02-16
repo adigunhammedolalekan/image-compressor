@@ -47,3 +47,5 @@ class CompressActivity: AppCompatActivity() {
     }
 }
 ```
+
+You can check [PhotoCompressorActivity.kt](https://github.com/adigunhammedolalekan/image-compressor/blob/master/app/src/main/java/api/photocompressor/PhotoCompressorActivity.kt) for full example
