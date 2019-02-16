@@ -10,7 +10,6 @@ import android.support.v4.app.ActivityCompat
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
-import kotlinx.android.synthetic.main.example_activity.*
 import lib.photocompressor.Compressor
 import java.io.File
 
@@ -135,9 +134,7 @@ class PhotoCompressorActivity: AppCompatActivity() {
 
                 path
             }
-        }catch (e: Exception) {
-            Log.d("Test", "" + e)
-        }
+        }catch (e: Exception) {}
 
         return ""
     }
