@@ -2,6 +2,8 @@
 
 buildscript {
     ext.kotlin_version = '1.2.50'
+    ext.mockito_version = '2.0.0'
+    ext.androidx_version = '1.0.0'
     repositories {
         google()
         jcenter()
@@ -20,6 +22,8 @@ allprojects {
         google()
         jcenter()
     }
+
+
 }
 
 task clean(type: Delete) {

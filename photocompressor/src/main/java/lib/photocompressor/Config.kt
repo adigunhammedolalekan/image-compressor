@@ -9,6 +9,13 @@ class Config {
     private var width: Int = 0
     private var format: Bitmap.CompressFormat = Bitmap.CompressFormat.PNG
 
+    companion object {
+
+        const val PNG = 1
+        const val JPG = 2
+        const val WEBP = 3
+    }
+
     open class Builder {
 
         private var quality: Int = 0
@@ -16,12 +23,6 @@ class Config {
         private var width: Int = 0
         private var format: Bitmap.CompressFormat = Bitmap.CompressFormat.PNG
 
-        companion object {
-
-            const val PNG = 1
-            const val JPG = 2
-            const val WEBP = 3
-        }
 
         fun setHeight(h: Int): Builder {
             height = h
